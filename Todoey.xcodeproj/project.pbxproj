@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		2AADBEB420DD218D0075A935 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AADBEB320DD218D0075A935 /* AppDelegate.swift */; };
-		2AADBEB620DD218D0075A935 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AADBEB520DD218D0075A935 /* ViewController.swift */; };
+		2AADBEB620DD218D0075A935 /* TodoListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AADBEB520DD218D0075A935 /* TodoListViewController.swift */; };
 		2AADBEB920DD218D0075A935 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2AADBEB720DD218D0075A935 /* Main.storyboard */; };
 		2AADBEBB20DD218D0075A935 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2AADBEBA20DD218D0075A935 /* Assets.xcassets */; };
 		2AADBEBE20DD218D0075A935 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2AADBEBC20DD218D0075A935 /* LaunchScreen.storyboard */; };
@@ -17,7 +17,7 @@
 /* Begin PBXFileReference section */
 		2AADBEB020DD218D0075A935 /* Todoey.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Todoey.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2AADBEB320DD218D0075A935 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		2AADBEB520DD218D0075A935 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2AADBEB520DD218D0075A935 /* TodoListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoListViewController.swift; sourceTree = "<group>"; };
 		2AADBEB820DD218D0075A935 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2AADBEBA20DD218D0075A935 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2AADBEBD20DD218D0075A935 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -55,13 +55,45 @@
 			isa = PBXGroup;
 			children = (
 				2AADBEB320DD218D0075A935 /* AppDelegate.swift */,
-				2AADBEB520DD218D0075A935 /* ViewController.swift */,
-				2AADBEB720DD218D0075A935 /* Main.storyboard */,
-				2AADBEBA20DD218D0075A935 /* Assets.xcassets */,
-				2AADBEBC20DD218D0075A935 /* LaunchScreen.storyboard */,
+				2AADBEC720DD21EA0075A935 /* Model */,
+				2AADBEC620DD21E20075A935 /* Controller */,
+				2AADBEC520DD21D70075A935 /* View */,
+				2AADBEC820DD21FF0075A935 /* Supporting Files */,
 				2AADBEBF20DD218D0075A935 /* Info.plist */,
 			);
 			path = Todoey;
+			sourceTree = "<group>";
+		};
+		2AADBEC520DD21D70075A935 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2AADBEB720DD218D0075A935 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2AADBEC620DD21E20075A935 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				2AADBEB520DD218D0075A935 /* TodoListViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		2AADBEC720DD21EA0075A935 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		2AADBEC820DD21FF0075A935 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2AADBEBA20DD218D0075A935 /* Assets.xcassets */,
+				2AADBEBC20DD218D0075A935 /* LaunchScreen.storyboard */,
+			);
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,7 +168,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2AADBEB620DD218D0075A935 /* ViewController.swift in Sources */,
+				2AADBEB620DD218D0075A935 /* TodoListViewController.swift in Sources */,
 				2AADBEB420DD218D0075A935 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
